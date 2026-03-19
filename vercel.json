@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/quotes.js", "use": "@vercel/node" },
+    { "src": "api/history.js", "use": "@vercel/node" },
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "manifest.json", "use": "@vercel/static" },
+    { "src": "*.png", "use": "@vercel/static" },
+    { "src": "icon.svg", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/api/quotes", "dest": "/api/quotes.js" },
+    { "src": "/api/history", "dest": "/api/history.js" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}

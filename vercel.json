@@ -1,6 +1,1 @@
-{
-  "functions": {
-    "api/quotes.js": { "runtime": "nodejs20.x" },
-    "api/history.js": { "runtime": "nodejs20.x" }
-  }
-}
+{}
